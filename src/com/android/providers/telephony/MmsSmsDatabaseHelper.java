@@ -1684,7 +1684,7 @@ public class MmsSmsDatabaseHelper extends SQLiteOpenHelper {
             } finally {
                 db.endTransaction();
             }
-            // fall through
+            return;
         }
 
         Log.e(TAG, "Destroying all old data.");
